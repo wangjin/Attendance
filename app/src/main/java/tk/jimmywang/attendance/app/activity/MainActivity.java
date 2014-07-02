@@ -1,4 +1,4 @@
-package tk.jimmywang.testapplication.attendance.app.activity;
+package tk.jimmywang.attendance.app.activity;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
