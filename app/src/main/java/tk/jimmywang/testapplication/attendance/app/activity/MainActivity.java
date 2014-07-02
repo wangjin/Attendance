@@ -1,9 +1,10 @@
-package tk.jimmywang.testapplication.attendance.app;
+package tk.jimmywang.testapplication.attendance.app.activity;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import tk.jimmywang.testapplication.attendance.app.R;
 
 
 public class MainActivity extends ActionBarActivity {
