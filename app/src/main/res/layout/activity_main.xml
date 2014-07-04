@@ -9,25 +9,18 @@
             android:layout_height="0dp"
             android:layout_weight="1">
 
-
-        <RelativeLayout
-                android:id="@+id/progressbar_parent"
-                android:background="#00000000"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
-
-            <ProgressBar
-                    android:layout_centerInParent="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-        </RelativeLayout>
+        <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
     </FrameLayout>
 
 
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:background="#EEEEEE"
             android:orientation="horizontal">
 
         <RelativeLayout
@@ -43,12 +36,19 @@
                     android:orientation="vertical"
                     >
 
+                <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/bookmark_line_30"
+                        />
+
                 <TextView
 
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:text="考勤管理"/>
+                        android:layout_gravity="center"
+                        android:text="考勤"/>
             </LinearLayout>
 
         </RelativeLayout>
@@ -66,11 +66,18 @@
                     android:orientation="vertical"
                     >
 
+                <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/user_line_30"
+                        />
+
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="员工管理"/>
+                        android:text="员工"/>
             </LinearLayout>
         </RelativeLayout>
 
