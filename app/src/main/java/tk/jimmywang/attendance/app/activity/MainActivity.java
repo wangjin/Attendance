@@ -1,12 +1,11 @@
 package tk.jimmywang.attendance.app.activity;
 
 import android.os.AsyncTask;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.RelativeLayout;
+import android.widget.ProgressBar;
 import tk.jimmywang.testapplication.attendance.app.R;
 
 
@@ -56,7 +55,7 @@ public class MainActivity extends BaseActivity {
         @Override
         protected void onPostExecute(String str) {
             super.onPostExecute(str);
-            RelativeLayout relativeLayout  = (RelativeLayout) findViewById(R.id.progressbar_parent);
+            ProgressBar relativeLayout = (ProgressBar) findViewById(R.id.progressbar);
             relativeLayout.setVisibility(View.GONE);
         }
 
