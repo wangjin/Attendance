@@ -5,6 +5,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android">
 
     <FrameLayout
+            android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1">
@@ -20,7 +21,6 @@
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#EEEEEE"
             android:orientation="horizontal">
 
         <RelativeLayout
@@ -37,6 +37,7 @@
                     >
 
                 <ImageView
+                        android:id="@+id/image_attendance"
                         android:layout_gravity="center"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
@@ -67,6 +68,7 @@
                     >
 
                 <ImageView
+                        android:id="@+id/image_worker"
                         android:layout_gravity="center"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
