@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.Toast;
+
 import tk.jimmywang.attendance.app.R;
 import tk.jimmywang.attendance.app.fragment.AttendanceFragment;
 import tk.jimmywang.attendance.app.fragment.WorkerFragment;
@@ -58,11 +58,13 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
         switch (v.getId()) {
             case R.id.menu_attendance:
-                Toast.makeText(this, "Attendance", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "Attendance", Toast.LENGTH_SHORT).show();
+                this.getLogger("click", "Attendance");
                 setSelectedMenu(1);
                 break;
             case R.id.menu_worker:
-                Toast.makeText(this, "Worker", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "Worker", Toast.LENGTH_SHORT).show();
+                this.getLogger("click", "Worker");
                 setSelectedMenu(2);
                 break;
         }
@@ -116,7 +118,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         }
     }
 
-    public void resetMenuBackground(){
+    public void resetMenuBackground() {
         attendanceMenu.setBackgroundColor(Color.parseColor("#FFFFFF"));
         workerMenu.setBackgroundColor(Color.parseColor("#FFFFFF"));
         attendanceImage.setImageResource(R.drawable.bookmark_line_30);
