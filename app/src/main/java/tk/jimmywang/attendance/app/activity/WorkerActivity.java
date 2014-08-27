@@ -48,9 +48,6 @@ public class WorkerActivity extends BaseActivity implements View.OnClickListener
                 this.setResult(1, intent);
                 this.finish();
                 break;
-            case R.id.button_cancelWorker:
-                this.finish();
-                break;
         }
     }
 }
