@@ -2,16 +2,34 @@
 <pre-dex-items>
 
     <item
-        dex="D:\Development\IdeaProjects\Attendance\app\build\intermediates\pre-dexed\debug\classes-bc81742466f7808c007ff7025b78045e2d98416c.jar"
-        jar="D:\Development\IdeaProjects\Attendance\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.1.0\classes.jar"
+        dex="D:\Development\Android\IdeaProjects\Attendance\app\build\intermediates\pre-dexed\debug\classes-2fdcd1472b6b8b5a9ea79d3736bc08d5d8708c4c.jar"
+        jar="D:\Development\Android\IdeaProjects\Attendance\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
     <item
-        dex="D:\Development\IdeaProjects\Attendance\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-a490e8241fead3ab47dddfab6f05a6d0a8dc1e8d.jar"
-        jar="D:\Program Files (x86)\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        dex="D:\Development\Android\IdeaProjects\Attendance\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-e90adc4e850bb77e40d45f236cc342dd1083bcbd.jar"
+        jar="D:\Development\Android\IdeaProjects\Attendance\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
+        dex="D:\Development\Android\IdeaProjects\Attendance\app\build\intermediates\pre-dexed\debug\classes-878f4012aa958c5b53f0b03de62f27997be55655.jar"
+        jar="D:\Development\Android\IdeaProjects\Attendance\app\build\intermediates\exploded-aar\Attendance\volley\unspecified\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="d52c5d5266d4e8a71df8a9fbbe4a2ebb4dcfc77f"/>
+    <item
+        dex="D:\Development\Android\IdeaProjects\Attendance\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-1491bead5919b4679c72d46acf012c191c609286.jar"
+        jar="D:\Development\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+    <item
+        dex="D:\Development\Android\IdeaProjects\Attendance\app\build\intermediates\pre-dexed\debug\classes-08e078a1ac2372426908a40a790361c7c38235e6.jar"
+        jar="D:\Development\Android\IdeaProjects\Attendance\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef"/>
 
 </pre-dex-items>
