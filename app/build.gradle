@@ -34,4 +34,6 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:19.+'
     compile project(':volley')
+    compile 'com.alibaba:fastjson:1.1.41'
+
 }
