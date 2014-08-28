@@ -14,8 +14,6 @@ public class WorkerActivity extends BaseActivity implements View.OnClickListener
 
     private EditText workerNameEditText;
     private EditText workerPhoneEditText;
-    private Button workerSubmitButton;
-    private Button workerCancelButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +27,8 @@ public class WorkerActivity extends BaseActivity implements View.OnClickListener
     public void initView() {
         workerNameEditText = (EditText) findViewById(R.id.editText_workerName);
         workerPhoneEditText = (EditText) findViewById(R.id.editText_workerPhone);
-        workerSubmitButton = (Button) findViewById(R.id.button_submitWorker);
-        workerCancelButton = (Button) findViewById(R.id.button_submitWorker);
+        Button workerSubmitButton = (Button) findViewById(R.id.button_submitWorker);
         workerSubmitButton.setOnClickListener(this);
-        workerCancelButton.setOnClickListener(this);
 
     }
 
