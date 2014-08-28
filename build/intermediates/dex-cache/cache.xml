@@ -8,6 +8,12 @@
         revision="20.0.0"
         sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
     <item
+        dex="D:\Development\Android\IdeaProjects\Attendance\app\build\intermediates\pre-dexed\debug\fastjson-1.1.41-44fe05b1172c58aa855bf8c99f379e6faa501c78.jar"
+        jar="C:\Users\金\.gradle\caches\modules-2\files-2.1\com.alibaba\fastjson\1.1.41\a244aa752b9e0210d0e50b5c1e11319711ed9290\fastjson-1.1.41.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a244aa752b9e0210d0e50b5c1e11319711ed9290"/>
+    <item
         dex="D:\Development\Android\IdeaProjects\Attendance\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-e90adc4e850bb77e40d45f236cc342dd1083bcbd.jar"
         jar="D:\Development\Android\IdeaProjects\Attendance\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
         jumboMode="false"
@@ -18,7 +24,7 @@
         jar="D:\Development\Android\IdeaProjects\Attendance\app\build\intermediates\exploded-aar\Attendance\volley\unspecified\classes.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="d52c5d5266d4e8a71df8a9fbbe4a2ebb4dcfc77f"/>
+        sha1="6a9bc03ce986b7e49fd65e4f73158b5ea5dd5f46"/>
     <item
         dex="D:\Development\Android\IdeaProjects\Attendance\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-1491bead5919b4679c72d46acf012c191c609286.jar"
         jar="D:\Development\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
