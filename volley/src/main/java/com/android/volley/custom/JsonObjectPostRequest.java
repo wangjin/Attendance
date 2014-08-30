@@ -1,7 +1,5 @@
 package com.android.volley.custom;
 
-import android.util.Log;
-
 import com.android.volley.NetworkResponse;
 import com.android.volley.ParseError;
 import com.android.volley.Request;
@@ -17,21 +15,21 @@ import java.util.Map;
 /**
  * Created by 金 on 2014/8/27.
  */
-public class JsonObjectRequest extends Request<JSONObject> {
+public class JsonObjectPostRequest extends Request<JSONObject> {
 
 
     private Response.Listener<JSONObject> listener;
     private Map<String, String> params;
 
-    public JsonObjectRequest(String url, Map<String, String> params,
-                             Response.Listener<JSONObject> reponseListener, Response.ErrorListener errorListener) {
-        super(Method.GET, url, errorListener);
+    public JsonObjectPostRequest(String url, Map<String, String> params,
+                                 Response.Listener<JSONObject> reponseListener, Response.ErrorListener errorListener) {
+        super(Method.POST, url, errorListener);
         this.listener = reponseListener;
         this.params = params;
     }
 
-    public JsonObjectRequest(int method, String url, Map<String, String> params,
-                             Response.Listener<JSONObject> reponseListener, Response.ErrorListener errorListener) {
+    public JsonObjectPostRequest(int method, String url, Map<String, String> params,
+                                 Response.Listener<JSONObject> reponseListener, Response.ErrorListener errorListener) {
         super(method, url, errorListener);
         this.listener = reponseListener;
         this.params = params;
@@ -45,24 +43,20 @@ public class JsonObjectRequest extends Request<JSONObject> {
     @Override
     protected Response<JSONObject> parseNetworkResponse(NetworkResponse response) {
         try {
-            String jsonString = new String(response.data,
-                    HttpHeaderParser.parseCharset(response.headers));
-            JSONObject jsonObject = new JSONObject(jsonString);
-
-            return Response.success(jsonObject,
+            return Response.success(new JSONObject(new String(response.data,
+                            HttpHeaderParser.parseCharset(response.headers))),
                     HttpHeaderParser.parseCacheHeaders(response));
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
             return Response.error(new ParseError(e));
         } catch (JSONException je) {
             je.printStackTrace();
-            Log.d("je",je.getMessage());
             return Response.error(new ParseError(je));
         }
     }
 
     @Override
     protected void deliverResponse(JSONObject response) {
-
+        listener.onResponse(response);
     }
 }
