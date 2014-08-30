@@ -43,8 +43,7 @@ public class JsonObjectPostRequest extends Request<JSONObject> {
     @Override
     protected Response<JSONObject> parseNetworkResponse(NetworkResponse response) {
         try {
-            return Response.success(new JSONObject(new String(response.data,
-                            HttpHeaderParser.parseCharset(response.headers))),
+            return Response.success(new JSONObject(new String(response.data,"utf-8")),
                     HttpHeaderParser.parseCacheHeaders(response));
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
