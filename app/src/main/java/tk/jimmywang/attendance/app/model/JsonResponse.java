@@ -6,7 +6,7 @@ package tk.jimmywang.attendance.app.model;
  * @author WangJin
  * @version 1.0
  */
-public class Response<T> {
+public class JsonResponse<T> {
 
     private Integer status;
 
@@ -14,7 +14,10 @@ public class Response<T> {
 
     private T data;
 
-    public Response(Integer status, String message, T data) {
+    public JsonResponse() {
+    }
+
+    public JsonResponse(Integer status, String message, T data) {
         this.status = status;
         this.message = message;
         this.data = data;
