@@ -1,37 +1,30 @@
 package tk.jimmywang.attendance.app.model;
 
-import java.io.Serializable;
-
 /**
- * Created by 金 on 2014/8/27.
+ * <i>Created by WangJin on 2014-08-30 23:38.
+ *
+ * @author WangJin
+ * @version 1.0
  */
-public class Worker implements Serializable {
 
-    private String workerName;
+public class Worker extends BaseModel{
 
-    private String workerPhone;
+    private String name;
+    private String phoneNumber;
 
-    public Worker() {
+    public String getName() {
+        return name;
     }
 
-    public Worker(String workerName, String workerPhone) {
-        this.workerName = workerName;
-        this.workerPhone = workerPhone;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getWorkerName() {
-        return workerName;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setWorkerName(String workerName) {
-        this.workerName = workerName;
-    }
-
-    public String getWorkerPhone() {
-        return workerPhone;
-    }
-
-    public void setWorkerPhone(String workerPhone) {
-        this.workerPhone = workerPhone;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }
